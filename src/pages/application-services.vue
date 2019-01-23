@@ -32,7 +32,12 @@
                 </b-row>
                 <b-row class="justify-content-md-center text-center">
                     <b-col>
-                        <button href="#" class="btn btn-bg-dark">Request FREE Quote</button>
+                        <b-btn @click="show=true" class="btn btn-bg-dark">Request FREE Quote</b-btn>
+                        <b-modal v-model="show" hide-footer="true">
+                            <div class="require-form">
+                                <contact-form></contact-form>
+                            </div>
+                        </b-modal>
                     </b-col>
                 </b-row>
             </b-container>
@@ -99,8 +104,17 @@
 </template>
 
 <script>
+import ContactForm from '@/components/contact-form'
 
 export default {
-    name: 'ApplicationServices'
+    name: 'ApplicationServices',
+    components: {
+        ContactForm
+    },
+    data () {
+        return {
+            show: false
+        }
+    }
 }
 </script>

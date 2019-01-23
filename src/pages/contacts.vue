@@ -50,7 +50,7 @@
                         <div class="contacts__body">
                             <contact-form></contact-form>
                         </div>
-                    </b-col>        
+                    </b-col>
                 </b-row>
             </b-container>
             <b-container fluid>

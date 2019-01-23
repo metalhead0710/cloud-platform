@@ -2,7 +2,7 @@
     <div class="contact-form">
         <b-form @submit="onSubmit" @reset="onReset" v-if="show">
             <b-form-group id="name"
-                label="First Name"
+                label="First Name *"
                 label-for="name">
                 <b-form-input id="name"
                     name="name"
@@ -11,7 +11,7 @@
                 </b-form-input>
             </b-form-group>
             <b-form-group id="surname"
-                label="Last Name"
+                label="Last Name *"
                 label-for="surname">
                 <b-form-input id="surname"
                     type="text"
@@ -29,7 +29,7 @@
                 </b-form-input>
             </b-form-group>
             <b-form-group id="email"
-                label="Email address"
+                label="Email address *"
                 label-for="email">
                 <b-form-input id="email"
                     type="email"
@@ -56,7 +56,6 @@
                     :max-rows="6">
                 </b-form-textarea>
             </b-form-group>
-            
             <div class="form-buttons">
                 <div class="g-recaptcha" data-sitekey="6Lf24osUAAAAADGgBWZCZAlEX_VyinveKBT4dioq"></div>
                 <b-button type="submit" class="send-msg" variant="primary">Submit</b-button>

@@ -17,18 +17,12 @@ import PrivacyAndDataProtection from '@/pages/privacy'
 import TermsAndConditions from '@/pages/terms-and-conditions'
 import PrivacyPolicy from '@/pages/policy'
 import NotFound from '@/pages/404'
-import Test from '@/pages/test'
 
 Vue.use(Router)
 
 export default new Router({
     mode: 'history',
     routes: [
-        {
-            path: '/test',
-            name: 'Test',
-            component: Test
-        },
         {
             path: '/',
             name: 'Home',

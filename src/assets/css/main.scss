@@ -536,6 +536,46 @@ svg.icon {
     }
 }
 
+.modal-header {
+    padding-bottom: 10px;
+}
+
+.require-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0 15px;
+    .col-form-label {
+        font-size: 0.8125rem;
+        padding-bottom: 5px;
+        display: flex;
+        align-self: flex-start;
+        color: map-get($text-colors, heading-dark);
+    }
+    .form-group {
+        margin-bottom: 10px;
+    }
+    .btn {
+        color: #fff;
+    }
+    .g-recaptcha {
+        display: none;
+    }
+    .form-buttons {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.form-control .error {
+    border: 1px solid red;
+}
+
+.error {
+    color: red;
+    font-size: 0.8125rem;
+}
+
 .address-icon {
     height: 22px;
     margin-top: 5px;

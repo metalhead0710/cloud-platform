@@ -65,9 +65,6 @@
                     <li class="nav__item">
                         <router-link class="nav__link" to="/contacts">Contacts</router-link>
                     </li>
-                    <li class="nav__item">
-                        <router-link class="nav__link" to="/test">Test</router-link>
-                    </li>
                     <li class="nav__item hidden">
                         <a class="nav__link" to="https://cloud.platops.com/login" target="_blank">Login</a>
                     </li>
