@@ -51,6 +51,16 @@
                         </b-media>
                     </b-col>
                 </b-row>
+                <b-row class="justify-content-md-center text-center custom">
+                    <b-col>
+                        <b-btn @click="show=true" class="btn btn-bg-dark">Request FREE Quote</b-btn>
+                        <b-modal v-model="show" hide-footer="true">
+                            <div class="require-form">
+                                <contact-form></contact-form>
+                            </div>
+                        </b-modal>
+                    </b-col>
+                </b-row>
             </b-container>
         </section>
        <!-- <section class="main-features">
@@ -131,7 +141,31 @@
 </template>
 
 <script>
+import ContactForm from '@/components/contact-form'
+
 export default {
-    name: 'ManagedDatabase'
+    name: 'ManagedDatabase',
+    components: {
+        ContactForm
+    },
+    data () {
+        return {
+            show: false
+        }
+    }
 }
 </script>
+
+<style lang="scss" scoped>
+
+.custom {
+    margin-bottom: 120px;
+}
+
+@media screen and (max-width: 767px) {
+    .custom {
+        margin: 30px 0;
+    }
+}
+
+</style>

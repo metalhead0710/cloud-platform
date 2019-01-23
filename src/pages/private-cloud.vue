@@ -44,6 +44,16 @@
                         </ul>
                     </b-col>
                 </b-row>
+                <b-row class="justify-content-md-center text-center custom">
+                    <b-col>
+                        <b-btn @click="show=true" class="btn btn-bg-dark">Request FREE Quote</b-btn>
+                        <b-modal v-model="show" hide-footer="true">
+                            <div class="require-form">
+                                <contact-form></contact-form>
+                            </div>
+                        </b-modal>
+                    </b-col>
+                </b-row>
             </b-container>
         </section>
         <section class="page">
@@ -76,16 +86,40 @@
 </template>
 
 <script>
+import ContactForm from '@/components/contact-form'
 
 export default {
-    name: 'PrivateCloud'
+    name: 'PrivateCloud',
+    components: {
+        ContactForm
+    },
+    data () {
+        return {
+            show: false
+        }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
-    .page__list {
-        li {
-            padding: 10px 0;
-        }
+
+.page__list {
+    li {
+        padding: 10px 0;
     }
+}
+
+.custom {
+    margin: 15px 0;
+}
+
+@media screen and (max-width: 767px) {
+    .custom {
+        margin-bottom: -40px;
+    }
+
+    .page__card {
+        padding: 20px 25px;
+    }
+}
 </style>

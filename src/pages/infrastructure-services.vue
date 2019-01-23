@@ -18,6 +18,16 @@
                         <p>Your IT infrastructure is a blend of legacy and modern systems, that need to align with your business goals. But, all too often your business changes faster than your infrastructure.</p>
                         <p>To keep pace with today’s rapidly changing technology, you need a trusted infrastructure partner. Embracing a managed IT infrastructure model allows you to reliably deploy modern technology with the assurance it will respond to your business needs. PlatOps' IT experts can manage your infrastructure to keep pace as your business needs change, allowing you to focus on the applications and IT initiatives that will transform your business.</p>
                         <p>PlatOps Managed Infrastructure helps organizations focus on what’s most important - clients and reducing the cost associated with managing underlying applications, operating systems and infrastructure. Fully backed by a leading application-level SLA that fits unique business needs.</p>
+                        <b-row class="custom">
+                            <b-col>
+                                <b-btn @click="show=true" class="btn btn-bg-dark">Request FREE Quote</b-btn>
+                                <b-modal v-model="show" hide-footer="true">
+                                    <div class="require-form">
+                                        <contact-form></contact-form>
+                                    </div>
+                                </b-modal>
+                            </b-col>
+                        </b-row>
                     </b-col>
                     <b-col sm="12" md="12" lg="6">
                         <div role="tablist" class="accordion">
@@ -253,7 +263,33 @@
 </template>
 
 <script>
+import ContactForm from '@/components/contact-form'
+
 export default {
-    name: 'InfrastructureServices'
+    name: 'InfrastructureServices',
+    components: {
+        ContactForm
+    },
+    data () {
+        return {
+            show: false
+        }
+    }
 }
 </script>
+
+<style lang="scss" scoped>
+
+.custom {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .custom {
+        text-align: center;
+        margin: 30px 0;
+    }
+}
+
+</style>
+

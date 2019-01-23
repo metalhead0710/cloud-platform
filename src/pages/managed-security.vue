@@ -47,6 +47,16 @@
                             <p>Maintaining a fully staffed, around-the-clock security team can be expensive. But by turning to a MSSP with the resources and experience to detect and respond to security events on your behalf, you can help ensure your environment’s security while reducing your TCO.</p>
                         </b-media>
                     </b-col>
+                    <b-row class="justify-content-md-center text-center" style="margin: 20px 0 50px 0;">
+                    <b-col>
+                        <b-btn @click="show=true" class="btn btn-bg-dark">Request FREE Quote</b-btn>
+                        <b-modal v-model="show" hide-footer="true">
+                            <div class="require-form">
+                                <contact-form></contact-form>
+                            </div>
+                        </b-modal>
+                    </b-col>
+                </b-row>
                 </b-row>
                 <b-row class="justify-content-center text-center">
                     <b-col sm="12" md="8">
@@ -85,9 +95,18 @@
 </template>
 
 <script>
+import ContactForm from '@/components/contact-form'
 
 export default {
-    name: 'ManagedSecurity'
+    name: 'ManagedSecurity',
+    components: {
+        ContactForm
+    },
+    data () {
+        return {
+            show: false
+        }
+    }
 }
 </script>
 

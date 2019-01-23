@@ -47,6 +47,16 @@
                         </b-media>
                     </b-col>
                 </b-row>
+                <b-row class="justify-content-md-center text-center" style="margin: 20px 0 50px 0;">
+                    <b-col>
+                        <b-btn @click="show=true" class="btn btn-bg-dark">Request FREE Quote</b-btn>
+                        <b-modal v-model="show" hide-footer="true">
+                            <div class="require-form">
+                                <contact-form></contact-form>
+                            </div>
+                        </b-modal>
+                    </b-col>
+                </b-row>
                 <b-row class="justify-content-center text-center">
                     <b-col sm="12" md="8">
                         <h1 class="heading">Compliance Across Platforms</h1>
@@ -84,9 +94,18 @@
 </template>
 
 <script>
+import ContactForm from '@/components/contact-form'
 
 export default {
-    name: 'ComplianceAssistance'
+    name: 'ComplianceAssistance',
+    components: {
+        ContactForm
+    },
+    data () {
+        return {
+            show: false
+        }
+    }
 }
 </script>
 

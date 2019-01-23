@@ -23,6 +23,16 @@
                         <p>It can be challenging to allocate IT manpower resources to monitor and manage critical components of your virtual environments. PlatOps Monitoring Managed Service is a supplemental proactive monitoring service for Public, Private, and Hybrid solutions that will serve as additional support to your IT team to monitor and resolve all of your critical alerts for you 24x7x365.</p>
                         <p>Our NOC will carefully monitor all critical components in your environment, as well as designing a custom escalation strategy should issues arise. Customers are able to subscribe to this service at a per VM level, providing flexibility and cost efficiency for critical servers that require this level of high touch service.</p>
                         <p>Monitoring as a Service (MaaS) lets you implement a monitoring application online. We host the monitoring software for you, which means you won’t have to install it on the computers in your network. Another advantage: you no longer have to bother with maintenance and updates.</p>
+                        <b-row class="custom">
+                            <b-col>
+                                <b-btn @click="show=true" class="btn btn-bg-dark">Request FREE Quote</b-btn>
+                                <b-modal v-model="show" hide-footer="true">
+                                    <div class="require-form">
+                                        <contact-form></contact-form>
+                                    </div>
+                                </b-modal>
+                            </b-col>
+                        </b-row>
                     </b-col>
                     <b-col sm="12" md="12" lg="6">
                         <div role="tablist" class="accordion">
@@ -198,7 +208,33 @@
 </template>
 
 <script>
+import ContactForm from '@/components/contact-form'
+
 export default {
-    name: 'MonitoringAndMetrics'
+    name: 'MonitoringAndMetrics',
+    components: {
+        ContactForm
+    },
+    data () {
+        return {
+            show: false
+        }
+    }
 }
 </script>
+
+<style lang="scss" scoped>
+
+.custom {
+    margin-top: 30px;
+    margin-bottom: -20px;
+}
+
+@media screen and (max-width: 768px) {
+    .custom {
+        text-align: center;
+        margin: 30px 0;
+    }
+}
+
+</style>
