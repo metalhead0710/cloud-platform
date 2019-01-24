@@ -88,6 +88,12 @@ import ContactForm from '@/components/contact-form'
 
 export default {
     name: 'CloudTransformation',
+    metaInfo: {
+		meta: [
+		  { name: 'description', content: 'Our cloud consulting strategy will improve your collaboration and access to information, reduce costs, and modernize your operations. PlatOps will show you the right way to move to the cloud to truly transform your business and make you a cutting-edge competitor.' },
+		  { name: 'keywords', content: 'cloud transformation projects, modernization to the cloud, mobile first cloud, visualizing cloud data' }
+		]
+	},
     components: {
         ContactForm
     },

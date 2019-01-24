@@ -99,6 +99,12 @@ import ContactForm from '@/components/contact-form'
 
 export default {
     name: 'ManagedSecurity',
+    metaInfo: {
+		meta: [
+		  { name: 'description', content: 'PlatOps Managed Security Services: Proactive Threat Detection and Rapid Remediation.' },
+		  { name: 'keywords', content: 'managed cloud security, managed security services, proactive threat detection, rapid remediation' }
+		]
+	},
     components: {
         ContactForm
     },

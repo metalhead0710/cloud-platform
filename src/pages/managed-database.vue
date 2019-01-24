@@ -145,6 +145,12 @@ import ContactForm from '@/components/contact-form'
 
 export default {
     name: 'ManagedDatabase',
+    metaInfo: {
+		meta: [
+		  { name: 'description', content: 'Platops Managed Database Services offer a secure vehicle for delivering data to end-users and consumers. From single instance deployments to more complex solutions.' },
+		  { name: 'keywords', content: 'managed database, managed database services, cloud database technologies, sla management' }
+		]
+	},
     components: {
         ContactForm
     },

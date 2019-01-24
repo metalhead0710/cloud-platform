@@ -90,6 +90,12 @@ import ContactForm from '@/components/contact-form'
 
 export default {
     name: 'PrivateCloud',
+    metaInfo: {
+		meta: [
+		  { name: 'description', content: 'Get the agility, scalability and efficiency of the public cloud, with the greater levels of control and security of a single-tenant, dedicated environment.' },
+		  { name: 'keywords', content: 'private cloud, private cloud for business, platops private cloud' }
+		]
+	},
     components: {
         ContactForm
     },

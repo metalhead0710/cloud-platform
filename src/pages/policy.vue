@@ -128,6 +128,12 @@
 
 <script>
 export default {
-    name: 'PrivacyPolicy'
+    name: 'PrivacyPolicy',
+    metaInfo: {
+		meta: [
+		  { name: 'description', content: 'Privacy Policy on PlatOps.com' },
+		  { name: 'keywords', content: 'privacy policy platops, privacy policy' }
+		]
+	}
 }
 </script>

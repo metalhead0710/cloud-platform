@@ -76,6 +76,12 @@ function initMap() {
 }
 export default {
     name: 'Contacts',
+    metaInfo: {
+		meta: [
+		  { name: 'description', content: 'PlatOps Cloud Technology and Support for your business. Contact - info@platops.com' },
+		  { name: 'keywords', content: 'platops contacts, platops usa, platops poland' }
+		]
+	},
     components: {
         ContactForm
     }

@@ -108,6 +108,12 @@ import ContactForm from '@/components/contact-form'
 
 export default {
     name: 'ApplicationServices',
+    metaInfo: {
+		meta: [
+		  { name: 'description', content: 'PlatOps provides a comprehensive application services solutions. Building Digital-Ready Application Environments Through IT as a Service' },
+		  { name: 'keywords', content: 'application services, services for applications, application management services' }
+		]
+	},
     components: {
         ContactForm
     },

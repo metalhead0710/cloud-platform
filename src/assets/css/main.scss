@@ -497,7 +497,7 @@ svg.icon {
         .form-buttons {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
             margin-top: 20px;
             .btn {
@@ -570,13 +570,15 @@ svg.icon {
     }
 }
 
-.form-control .error {
+.form-control.error {
     border: 1px solid red;
 }
 
 .error {
     color: red;
     font-size: 0.8125rem;
+    display: flex;
+    padding-top: 3px;
 }
 
 .address-icon {

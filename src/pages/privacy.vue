@@ -89,6 +89,12 @@ import ContactForm from '@/components/contact-form'
 
 export default {
     name: 'PrivacyAndDataProtection',
+    metaInfo: {
+		meta: [
+		  { name: 'description', content: 'With Privacy and Data Protection (PDP), PlatOps will help you protect your sensitive business data and help you meet compliance requirements related to data storage and protection.' },
+		  { name: 'keywords', content: 'platops privacy, platops data protection, privacy services, data protection services' }
+		]
+	},
     components: {
         ContactForm
     },

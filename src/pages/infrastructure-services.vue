@@ -267,6 +267,12 @@ import ContactForm from '@/components/contact-form'
 
 export default {
     name: 'InfrastructureServices',
+    metaInfo: {
+		meta: [
+		  { name: 'description', content: 'Your IT infrastructure is a blend of legacy and modern systems, that need to align with your business goals. But, all too often your business changes faster than your infrastructure.' },
+		  { name: 'keywords', content: 'cloud infrastructure services, cloud platform operations, cloud database administration, cloud monitoring operations' }
+		]
+	},
     components: {
         ContactForm
     },

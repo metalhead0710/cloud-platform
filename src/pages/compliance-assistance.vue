@@ -98,6 +98,12 @@ import ContactForm from '@/components/contact-form'
 
 export default {
     name: 'ComplianceAssistance',
+    metaInfo: {
+		meta: [
+		  { name: 'description', content: 'PlatOps Compliance Assistance: Address Your Governance, Risk and Compliance (GRC) Goals.' },
+		  { name: 'keywords', content: 'cloud compliance assistance, PCI-DSS compliance, cloud security experts' }
+		]
+	},
     components: {
         ContactForm
     },

@@ -212,6 +212,12 @@ import ContactForm from '@/components/contact-form'
 
 export default {
     name: 'MonitoringAndMetrics',
+    metaInfo: {
+		meta: [
+		  { name: 'description', content: 'Managed Monitoring Services - Gain additional resources on your IT team, with our Monitoring as a Service.' },
+		  { name: 'keywords', content: 'managed monitoring services, cloud monitoring, network monitoring, application monitoring, server monitoring' }
+		]
+	},
     components: {
         ContactForm
     },

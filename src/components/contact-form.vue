@@ -57,7 +57,6 @@
                 </b-form-textarea>
             </b-form-group>
             <div class="form-buttons">
-                <div class="g-recaptcha" data-sitekey="6Lf24osUAAAAADGgBWZCZAlEX_VyinveKBT4dioq"></div>
                 <b-button type="submit" class="send-msg" variant="primary">Submit</b-button>
             </div>
         </b-form>            
@@ -91,6 +90,7 @@ export default {
                         minlength: 2
                     },
                     surname: {
+                        required: true,
                         minlength: 2 
                     },
                     email: {

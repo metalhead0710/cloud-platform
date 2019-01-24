@@ -100,7 +100,13 @@
 <script>
 
 export default {
-    name: 'SecureLogManagement'
+    name: 'SecureLogManagement',
+    metaInfo: {
+		meta: [
+		  { name: 'description', content: 'Log Retention and Compliance Reporting helps satisfy security posture and regulatory compliance requirements for log collection, storage, and reporting, and supports an expandable range of log sources.' },
+		  { name: 'keywords', content: 'secure log management, monitoring services, log monitoring service' }
+		]
+	}
 }
 </script>
 

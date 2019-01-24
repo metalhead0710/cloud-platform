@@ -107,6 +107,12 @@ We can help with our managed services include cloud-ready networking with Layer 
 
 <script>
 export default {
-    name: 'ManagedCloud'
+    name: 'ManagedCloud',
+    metaInfo: {
+		meta: [
+		  { name: 'description', content: 'Managed Services for Infrastructure, Cloud Networking, and Cloud Operations.' },
+		  { name: 'keywords', content: 'managed cloud, managed services for infrastructure, cloud networking, managed services, cloud operations' }
+		]
+	}
 }
 </script>

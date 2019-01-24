@@ -62,6 +62,12 @@
 
 <script>
 export default {
-    name: 'TermsAndConditions'
+    name: 'TermsAndConditions',
+    metaInfo: {
+		meta: [
+		  { name: 'description', content: 'Terms and Conditions of PlatOps Service.' },
+		  { name: 'keywords', content: 'platops terms of service, platops terms and conditions' }
+		]
+	}
 }
 </script>
